@@ -1,4 +1,4 @@
-# 🛡️ LiteHound
+# LiteHound
 ![Py Version](https://img.shields.io/badge/Python-3.x-blue)
 ![REQUIRED](https://img.shields.io/badge/REQUIRED-tkinter-red)
 ![Domain_Security](https://img.shields.io/badge/Domain_Security-Identity%20and%20Active%20Directory-red)
@@ -8,7 +8,7 @@
 
 LiteHound is a Liteweight, standalone Active Directory (AD) attack path visualizer. It provides a simple, interactive GUI to analyze SharpHound JSON exports without the need for Neo4j, Java, or complex database configurations.
 
-✨ Features
+# Features
 
 - Interactive Graph Engine: Drag nodes to reorganize, scroll to zoom, and right-click to pan.
 
@@ -31,7 +31,7 @@ LiteHound is a Liteweight, standalone Active Directory (AD) attack path visualiz
   - 🟡 High Value (Tier 0)
 
 ---
-# 🚀 Getting Started
+# Getting Started
 
 Prerequisites
 
@@ -51,7 +51,7 @@ python lite_hound.py
 ```
 
 ---
-# 🛠️ Usage
+# Usage
 
 1. Run SharpHound on a target domain to generate a .zip export.
 
