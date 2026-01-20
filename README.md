@@ -1,4 +1,9 @@
 # 🛡️ LightHound
+![Py Version](https://img.shields.io/badge/Python-3.x-blue)
+![REQUIRED](https://img.shields.io/badge/REQUIRED-tkinter-red)
+![Domain_Security](https://img.shields.io/badge/Domain_Security-Identity%20and%20Active%20Directory-red)
+![version](https://img.shields.io/badge/LightHound-1.0-red)
+
 LightHound is a lightweight, standalone Active Directory (AD) attack path visualizer. It provides a simple, interactive GUI to analyze SharpHound JSON exports without the need for Neo4j, Java, or complex database configurations.
 
 ✨ Features
