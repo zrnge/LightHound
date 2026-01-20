@@ -4,7 +4,7 @@
 ![Domain_Security](https://img.shields.io/badge/Domain_Security-Identity%20and%20Active%20Directory-red)
 ![version](https://img.shields.io/badge/LiteHound-1.0-red)
 
-<img src="Litehound.png" alt="drawing"/>
+<img src="litehound.png" alt="drawing"/>
 
 LiteHound is a Liteweight, standalone Active Directory (AD) attack path visualizer. It provides a simple, interactive GUI to analyze SharpHound JSON exports without the need for Neo4j, Java, or complex database configurations.
 
