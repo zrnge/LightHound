@@ -22,3 +22,49 @@ LightHound is a lightweight, standalone Active Directory (AD) attack path visual
   - 🟠 Computers
 
   - 🟡 High Value (Tier 0)
+
+---
+# 🚀 Getting Started
+
+Prerequisites
+
+Python 3.x
+
+Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/zrnge/LightHound.git
+cd LightHound
+```
+
+2. Run the application:
+```bash
+python lite_hound.py
+```
+
+---
+# 🛠️ Usage
+
+1. Run SharpHound on a target domain to generate a .zip export.
+
+2. Open LightHound and click 📁 Load ZIP.
+
+3. Use the search bar or click a node to find the shortest path to Domain Admins.
+
+4. Explore the Object Details panel on the right for forensic-level inspection.
+
+
+# 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+# 👤 Author
+
+Zrnge
+
+GitHub: @zrnge
+
+# 📜 License
+
+This project is licensed under the MIT License.
