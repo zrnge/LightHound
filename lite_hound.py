@@ -9,7 +9,7 @@ from collections import deque
 class LiteHoundApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("LightHound - Lightweight AD Attack Path Explorer")
+        self.root.title("LiteHound - LiteHound AD Attack Path Explorer")
         self.root.geometry("1400x900")
 
         # --- State ---
