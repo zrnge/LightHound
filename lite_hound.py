@@ -9,7 +9,7 @@ from collections import deque
 class LiteHoundApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("LiteHound - LiteHound AD Attack Path Explorer")
+        self.root.title("LiteHound - Lightweight AD Attack Path Explorer")
         self.root.geometry("1400x900")
 
         # --- State ---
@@ -28,7 +28,11 @@ class LiteHoundApp:
         self.canvas.bind("<Button-1>", self.on_press)
         self.canvas.bind("<B1-Motion>", self.on_drag)
         self.canvas.bind("<ButtonRelease-1>", self.on_release)
-        self.canvas.bind("<MouseWheel>", self.on_zoom)
+        
+        # Cross-platform zoom support
+        self.canvas.bind("<MouseWheel>", self.on_zoom)     # Windows / macOS
+        self.canvas.bind("<Button-4>", self.on_zoom)      # Linux scroll up
+        self.canvas.bind("<Button-5>", self.on_zoom)      # Linux scroll down
         
         # Panning bindings with "hand" cursor
         self.canvas.bind("<Button-3>", self.start_pan)
@@ -241,7 +245,13 @@ class LiteHoundApp:
         self.canvas.config(cursor="")
 
     def on_zoom(self, event):
-        self.zoom_level *= 1.1 if event.delta > 0 or event.num == 4 else 0.9; self.redraw()
+        # Handle Linux Button-4 (Up) and Button-5 (Down)
+        if event.num == 4 or (hasattr(event, 'delta') and event.delta > 0):
+            self.zoom_level *= 1.1
+        elif event.num == 5 or (hasattr(event, 'delta') and event.delta < 0):
+            self.zoom_level *= 0.9
+        
+        self.redraw()
 
     def on_hover(self, event):
         item = self.canvas.find_closest(event.x, event.y); tags = self.canvas.gettags(item)
