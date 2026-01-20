@@ -61,11 +61,6 @@ python lite_hound.py
 
 4. Explore the Object Details panel on the right for forensic-level inspection.
 
-
-# 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page]([http://example.com](https://www.google.com/search?q=https://github.com/zrnge/LiteHound/issues))
-
 # 👤 Author
 
 Zrnge
