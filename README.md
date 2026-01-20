@@ -64,7 +64,7 @@ python lite_hound.py
 
 # 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+Contributions, issues, and feature requests are welcome! Feel free to check the <a url="https://www.google.com/search?q=https://github.com/zrnge/LightHound/issues">issues page</a>.
 
 # 👤 Author
 
